@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const app = express();
 const geocode = require('./utils/geocode');
 const forecast=require('./utils/forecast')
-
+const port = process.env.PORT || 4000;
 const staticpath = path.join(__dirname, '../public')
 const viewPath=path.join(__dirname,'../templates/views')
 const partialPath = path.join(__dirname, '../templates/partials');
@@ -93,6 +93,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(4000, () => {
-    console.log("server is running on PORT: 4000");
+app.listen(port, () => {
+    console.log("server is running on PORT: "+port);
 })
