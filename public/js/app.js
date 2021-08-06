@@ -21,8 +21,6 @@ formHandler.addEventListener('submit',(e) => {
                     messageOne.textContent = data.forecast;
                     messageTwo.textContent = data.location;
 
-
-                    
                 }
             })
         }) 
