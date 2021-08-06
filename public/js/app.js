@@ -20,6 +20,7 @@ formHandler.addEventListener('submit',(e) => {
                 else {
                     messageOne.textContent = data.forecast;
                     messageTwo.textContent = data.location;
+
                     
                 }
             })
